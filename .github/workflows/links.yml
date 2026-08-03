@@ -1,0 +1,25 @@
+name: Links
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress readme.md
+          fail: true
+      - if: failure()
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Link checker report
+          content-filepath: ./lychee/out.md
+          labels: report, automated issue
