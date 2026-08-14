@@ -10,7 +10,8 @@ Please read the [contribution guidelines](contributing.md) before opening a pull
 - [Code Audit Harnesses](#code-audit-harnesses)
 - [Pentesting Agents](#pentesting-agents)
 - [Fuzzing and Vulnerability Discovery](#fuzzing-and-vulnerability-discovery)
-- [Reverse Engineering Agents](#reverse-engineering-agents)
+- [DARPA AIxCC Cyber Reasoning Systems](#darpa-aixcc-cyber-reasoning-systems)
+- [Agent Tooling and Integrations](#agent-tooling-and-integrations)
 - [Agent Sandboxes](#agent-sandboxes)
 - [Benchmarks and Evals](#benchmarks-and-evals)
 
@@ -24,9 +25,13 @@ Agents are good at producing plausible findings and bad at telling which ones ar
 
 Harnesses that run coding agents against source code: discovery, triage, validation, and patching.
 
+- [audit](https://github.com/evilsocket/audit) - Eight-stage discovery agent built on the Claude Code SDK, combining many narrow agents, deliberate disagreement between them, and an explicit reachability gate.
+- [Clearwing](https://github.com/Lazarus-AI/clearwing) - Autonomous source-code hunter that ranks files, fans out specialist agents, and treats sanitizer crashes as ground truth, with a separate network-pentest mode.
 - [Codex Security](https://github.com/openai/codex-security) - OpenAI's CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities with Codex.
 - [Deepsec](https://github.com/vercel-labs/deepsec) - Vercel Labs' security harness for finding vulnerabilities in a codebase using coding agents.
 - [Defending Code Reference Harness](https://github.com/anthropics/defending-code-reference-harness) - Anthropic's reference implementation for autonomous vulnerability discovery and remediation with Claude, with skills for threat modeling, scanning, triage, and patching.
+- [OpenHack](https://github.com/openhackai/OpenHack) - Multi-agent scanner running recon, specialist hunts, independent validation, and sandbox and browser verification, using only open-source models.
+- [RAPTOR](https://github.com/gadievron/raptor) - Autonomous research framework chaining static analysis, binary analysis, vulnerability validation, exploit generation, and patch writing over a codebase or binary.
 - [Visa Vulnerability Agentic Harness](https://github.com/visa/visa-vulnerability-agentic-harness) - Visa's agentic SAST pipeline for autonomous vulnerability discovery, remediation, and validation, emitting Markdown and SARIF reports.
 - [VulnHunter](https://github.com/capitalone/VulnHunter) - Capital One's agentic security tool applying proactive, attacker-first analysis directly to source code.
 
@@ -34,30 +39,48 @@ Harnesses that run coding agents against source code: discovery, triage, validat
 
 Agents that attack running applications and infrastructure: reconnaissance, exploitation, and proof of impact.
 
-- [Burp Suite MCP](https://github.com/PortSwigger/mcp-server) - PortSwigger's own MCP server, connecting agents to Burp Suite's proxy, scanner, and repeater.
+- [AIDA](https://github.com/Vasco0x4/AIDA) - Model-agnostic pentesting agent that reasons over a defined scope, executes in an isolated container, and keeps persistent assessment state across sessions.
+- [AWE](https://github.com/stuxlabs/AWE) - Research framework pairing a lightweight orchestration layer with memory-augmented, vulnerability-specific agent pipelines, evaluated on the XBOW benchmark.
 - [CAI](https://github.com/aliasrobotics/cai) - Alias Robotics' framework for building cybersecurity agents, with tool and workflow primitives for offensive testing.
 - [CyberStrike](https://github.com/CyberStrikeus/CyberStrike) - Offensive-security harness coordinating autonomous agents over signed attack skills, built-in tools, and MCP integrations, mapped to MITRE ATT&CK and OWASP WSTG.
-- [HexStrike AI](https://github.com/0x4m4/hexstrike-ai) - MCP server that gives agents a large toolkit of offensive security tools for recon, scanning, and exploitation.
+- [HPTSA](https://github.com/uiuc-kang-lab/HPTSA) - Research implementation behind *Teams of LLM Agents can Exploit Zero-Day Vulnerabilities*, using a supervisor agent to coordinate vulnerability-specialized subagents.
 - [Nebula](https://github.com/berylliumsec/nebula) - Penetration-testing assistant that automates recon, note-taking, and tool orchestration.
+- [NeuroSploit](https://github.com/JoasASantos/NeuroSploit) - Rust harness that turns a URL, repository, or host into an autonomous engagement, selecting only the specialist agents matching the surface and validating findings across models.
+- [PentAGI](https://github.com/vxcontrol/pentagi) - Fully autonomous multi-agent pentesting system with Docker isolation, planning and supervision, persistent memory, and a web control plane.
+- [Pentest Copilot](https://github.com/bugbasesecurity/pentest-copilot) - Agent that drives a Kali attack box end to end, installing tooling as needed, operating Burp and a real browser, and spawning parallel subagents.
+- [PentestAgent](https://github.com/GH05TCREW/pentestagent) - Black-box testing framework with autonomous and multi-agent modes, attack playbooks, Kali execution, and persistent sessions.
 - [PentestGPT](https://github.com/GreyDGL/PentestGPT) - Automated penetration-testing agentic framework powered by large language models.
+- [RedAmon](https://github.com/samugit83/redamon) - End-to-end platform chaining recon, exploitation, and post-exploitation over a Neo4j attack graph, then triaging findings, patching the code, and opening pull requests.
 - [Shannon](https://github.com/KeygraphHQ/shannon) - AI pentester for web applications and APIs that analyzes source code, identifies attack vectors, and executes real exploits to prove findings.
 - [Strix](https://github.com/usestrix/strix) - Open-source AI penetration-testing agent that finds and helps fix application vulnerabilities.
 
 ## Fuzzing and Vulnerability Discovery
 
-Cyber reasoning systems and fuzzing harnesses that use models to find crashes and generate patches.
+Harnesses that use models to find crashes and generate patches.
 
-- [Atlantis](https://github.com/Team-Atlanta/aixcc-afc-atlantis) - Team Atlanta's cyber reasoning system that won the DARPA AIxCC final competition, released as a competition snapshot.
-- [Buttercup](https://github.com/trailofbits/buttercup) - Trail of Bits' cyber reasoning system from DARPA AIxCC, pairing an OSS-Fuzz fuzzing campaign with a multi-agent patcher.
 - [OSS-Fuzz-Gen](https://github.com/google/oss-fuzz-gen) - Google's framework for generating and benchmarking fuzz targets with LLMs across C/C++, Java, and Python.
 
-## Reverse Engineering Agents
+## DARPA AIxCC Cyber Reasoning Systems
 
-Tools that put a decompiler in the agent's loop, mostly as MCP servers and disassembler plugins.
+The seven finalist systems from the DARPA AI Cyber Challenge, each built to autonomously find and patch vulnerabilities in real open-source code, and each released as a competition snapshot.
+
+- [ARTIPHISHELL](https://github.com/shellphish/artiphishell) - Shellphish's cyber reasoning system, released with its components, pipelines, services, and full deployment stack.
+- [Atlantis](https://github.com/Team-Atlanta/aixcc-afc-atlantis) - Team Atlanta's cyber reasoning system that won the final competition.
+- [BugBuster](https://github.com/42-b3yond-6ug/42-b3yond-6ug-crs) - Team 42-b3yond-6ug's cyber reasoning system, preserved with the core components and deployment configuration needed to run it.
+- [Buttercup](https://github.com/trailofbits/buttercup) - Trail of Bits' second-place cyber reasoning system, pairing an OSS-Fuzz fuzzing campaign with a multi-agent patcher.
+- [FuzzingBrain](https://github.com/fuzzingbrain/afc-crs-all-you-need-is-a-fuzzing-brain) - Team all_you_need_is_a_fuzzing_brain's system, pairing coverage-guided fuzzing with agents that reason about suspicious points, build proofs of vulnerability, and dynamically verify every finding.
+- [Lacrosse](https://github.com/siftech/afc-crs-lacrosse) - SIFT's multi-agent cyber reasoning system, combining fuzzing and symbolic reasoning to find and patch bugs in C and Java.
+- [Robo Duck](https://github.com/theori-io/aixcc-afc-archive) - Theori's third-place cyber reasoning system, released as the complete finals submission.
+
+## Agent Tooling and Integrations
+
+Security capabilities exposed to somebody else's agent, largely as MCP servers and disassembler plugins. These supply the tools a harness calls; they do not own the agent loop themselves.
 
 - [Binary Ninja Headless MCP](https://github.com/mrphrazer/binary-ninja-headless-mcp) - Headless Binary Ninja MCP server exposing 180 analysis tools to agents.
+- [Burp Suite MCP](https://github.com/PortSwigger/mcp-server) - PortSwigger's own MCP server, connecting agents to Burp Suite's proxy, scanner, and repeater.
 - [DAILA](https://github.com/mahaloz/DAILA) - Decompiler-agnostic plugin for using AI assistance inside your decompiler.
 - [Gepetto](https://github.com/JusticeRage/Gepetto) - IDA plugin that queries language models to explain and rename decompiled functions.
+- [HexStrike AI](https://github.com/0x4m4/hexstrike-ai) - MCP server that gives agents a large toolkit of offensive security tools for recon, scanning, and exploitation.
 - [IDA Pro MCP](https://github.com/mrexodia/ida-pro-mcp) - MCP server exposing IDA Pro decompilation, cross-references, and type inference to coding agents.
 - [LLM4Decompile](https://github.com/albertan017/LLM4Decompile) - Open models and pipeline for decompiling binary code into readable C.
 - [ReVa](https://github.com/cyberkaida/reverse-engineering-assistant) - Ghidra extension providing an MCP server for agent-driven reverse engineering.
@@ -81,4 +104,5 @@ Task sets and ground truth for measuring whether a harness actually works.
 - [ARVO](https://github.com/n132/ARVO) - Atlas of reproducible open-source vulnerabilities, used as ground truth for patching agents.
 - [Cybench](https://github.com/andyzorigin/cybench) - Framework for evaluating language model agents on 40 professional CTF tasks.
 - [CyberGym](https://github.com/sunblaze-ucb/cybergym) - Berkeley's large-scale benchmark evaluating agents on real-world vulnerability reproduction.
+- [HackSynth](https://github.com/aielte-research/HackSynth) - Autonomous pentesting agent released with two CTF benchmark sets of 200 challenges drawn from PicoCTF and OverTheWire.
 - [NYU CTF Bench](https://github.com/NYU-LLM-CTF/nyuctf_agents) - D-CIPHER and baseline agents for the NYU CTF benchmark.

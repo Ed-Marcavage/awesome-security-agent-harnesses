@@ -10,7 +10,7 @@ An entry should satisfy all of these:
 
 - **On topic.** It passes the test above. General agent frameworks belong in [awesome-agent-harness](https://github.com/Picrew/awesome-agent-harness), and general-purpose coding agents qualify only if they ship an explicit security mode. Tools for securing AI systems — prompt-injection scanners, model red-teaming, agent guardrails — are out of scope, and belong in the broader AI-security lists.
 - **Actually awesome.** You have used it, read it, or can point to real results (found vulnerabilities, published evaluations, competition placement). "Looks interesting" is not enough.
-- **Alive.** Maintained, documented, and not archived or deprecated.
+- **Alive.** Maintained, documented, and not archived or deprecated. One exception: competition submissions, where the frozen snapshot *is* the artifact and the results are the evidence. The AIxCC cyber reasoning systems are listed on that basis.
 
 ## Entry format
 
