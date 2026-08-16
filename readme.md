@@ -51,6 +51,7 @@ Agents that attack running applications and infrastructure: reconnaissance, expl
 - [PentestAgent](https://github.com/GH05TCREW/pentestagent) - Black-box testing framework with autonomous and multi-agent modes, attack playbooks, Kali execution, and persistent sessions.
 - [PentestGPT](https://github.com/GreyDGL/PentestGPT) - Automated penetration-testing agentic framework powered by large language models.
 - [RedAmon](https://github.com/samugit83/redamon) - End-to-end platform chaining recon, exploitation, and post-exploitation over a Neo4j attack graph, then triaging findings, patching the code, and opening pull requests.
+- [reverse-skill](https://github.com/zhaoxuya520/reverse-skill) - Security skill router that guides coding agents through repeatable reverse-engineering and penetration-testing workflows with tool bootstrapping and evidence tracking. A recent [Tessl review](https://tessl.io/registry/skills/github/zhaoxuya520/reverse-skill/reverse-skill-router) scored its primary router 75/100 (92% quality), with no impact evaluation and a failed security scan.
 - [Shannon](https://github.com/KeygraphHQ/shannon) - AI pentester for web applications and APIs that analyzes source code, identifies attack vectors, and executes real exploits to prove findings.
 - [Strix](https://github.com/usestrix/strix) - Open-source AI penetration-testing agent that finds and helps fix application vulnerabilities.
 
