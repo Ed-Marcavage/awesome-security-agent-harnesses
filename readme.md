@@ -14,12 +14,15 @@ Please read the [contribution guidelines](contributing.md) before opening a pull
 - [Agent Tooling and Integrations](#agent-tooling-and-integrations)
 - [Agent Sandboxes](#agent-sandboxes)
 - [Benchmarks and Evals](#benchmarks-and-evals)
+- [Readings](#readings)
 
 ## What Is a Security Agent Harness
 
 A security agent harness is everything wrapped around the model: the sandbox it runs in, the analysis tools it can call, the prompts and skills that encode a methodology, and the evals you use to check it. Most of the engineering in these systems lives here rather than in the model.
 
 Agents are good at producing plausible findings and bad at telling which ones are real. A harness that can reproduce a crash, replay an input, or re-run a static analyzer is how you throw out the bad ones before a human ever sees them.
+
+Entries tagged `SKILL.md` are skill packs rather than runnable harnesses: methodology encoded as [Agent Skills](https://agentskills.io) that a general coding agent like Claude Code executes. They live in the section matching what they do.
 
 ## Code Audit Harnesses
 
@@ -31,7 +34,8 @@ Harnesses that run coding agents against source code: discovery, triage, validat
 - [Deepsec](https://github.com/vercel-labs/deepsec) - Vercel Labs' security harness for finding vulnerabilities in a codebase using coding agents.
 - [Defending Code Reference Harness](https://github.com/anthropics/defending-code-reference-harness) - Anthropic's reference implementation for autonomous vulnerability discovery and remediation with Claude, with skills for threat modeling, scanning, triage, and patching.
 - [OpenHack](https://github.com/openhackai/OpenHack) - Multi-agent scanner running recon, specialist hunts, independent validation, and sandbox and browser verification, using only open-source models.
-- [RAPTOR](https://github.com/gadievron/raptor) - Autonomous research framework chaining static analysis, binary analysis, vulnerability validation, exploit generation, and patch writing over a codebase or binary.
+- [RAPTOR](https://github.com/gadievron/raptor) - Autonomous research framework chaining static analysis, binary analysis, vulnerability validation, exploit generation, and patch writing over a codebase or binary. `SKILL.md`.
+- [Trail of Bits Skills](https://github.com/trailofbits/skills) - Trail of Bits' skills for security research, vulnerability detection, and audit workflows, distilled from the firm's audit practice. `SKILL.md`.
 - [Visa Vulnerability Agentic Harness](https://github.com/visa/visa-vulnerability-agentic-harness) - Visa's agentic SAST pipeline for autonomous vulnerability discovery, remediation, and validation, emitting Markdown and SARIF reports.
 - [VulnHunter](https://github.com/capitalone/VulnHunter) - Capital One's agentic security tool applying proactive, attacker-first analysis directly to source code.
 
@@ -51,9 +55,10 @@ Agents that attack running applications and infrastructure: reconnaissance, expl
 - [PentestAgent](https://github.com/GH05TCREW/pentestagent) - Black-box testing framework with autonomous and multi-agent modes, attack playbooks, Kali execution, and persistent sessions.
 - [PentestGPT](https://github.com/GreyDGL/PentestGPT) - Automated penetration-testing agentic framework powered by large language models.
 - [RedAmon](https://github.com/samugit83/redamon) - End-to-end platform chaining recon, exploitation, and post-exploitation over a Neo4j attack graph, then triaging findings, patching the code, and opening pull requests.
-- [reverse-skill](https://github.com/zhaoxuya520/reverse-skill) - Security skill router that guides coding agents through repeatable reverse-engineering and penetration-testing workflows with tool bootstrapping and evidence tracking. A recent [Tessl review](https://tessl.io/registry/skills/github/zhaoxuya520/reverse-skill/reverse-skill-router) scored its primary router 75/100 (92% quality), with no impact evaluation and a failed security scan.
+- [reverse-skill](https://github.com/zhaoxuya520/reverse-skill) - Security skill router that guides coding agents through repeatable reverse-engineering and penetration-testing workflows with tool bootstrapping and evidence tracking. A recent [Tessl review](https://tessl.io/registry/skills/github/zhaoxuya520/reverse-skill/reverse-skill-router) scored its primary router 75/100 (92% quality), with no impact evaluation and a failed security scan. `SKILL.md`.
 - [Shannon](https://github.com/KeygraphHQ/shannon) - AI pentester for web applications and APIs that analyzes source code, identifies attack vectors, and executes real exploits to prove findings.
 - [Strix](https://github.com/usestrix/strix) - Open-source AI penetration-testing agent that finds and helps fix application vulnerabilities.
+- [Transilience Community Tools](https://github.com/transilienceai/communitytools) - Twenty-six skills and three tool integrations covering the pentest lifecycle from recon to reporting, with a published 104/104 result on the maintainers' CTF benchmark. `SKILL.md`.
 
 ## Fuzzing and Vulnerability Discovery
 
@@ -75,10 +80,12 @@ The seven finalist systems from the DARPA AI Cyber Challenge, each built to auto
 
 ## Agent Tooling and Integrations
 
-Security capabilities exposed to somebody else's agent, largely as MCP servers and disassembler plugins. These supply the tools a harness calls; they do not own the agent loop themselves.
+Security capabilities exposed to somebody else's agent: MCP servers, disassembler plugins, and broad skill libraries. These supply the tools and methodology a harness calls; they do not own the agent loop themselves.
 
+- [Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) - Community library of 800+ skills across 29 security domains, mapped to MITRE ATT&CK and NIST CSF; not affiliated with Anthropic despite the name. `SKILL.md`.
 - [Binary Ninja Headless MCP](https://github.com/mrphrazer/binary-ninja-headless-mcp) - Headless Binary Ninja MCP server exposing 180 analysis tools to agents.
 - [Burp Suite MCP](https://github.com/PortSwigger/mcp-server) - PortSwigger's own MCP server, connecting agents to Burp Suite's proxy, scanner, and repeater.
+- [Claude Code CyberSecurity Skills](https://github.com/Masriyan/Claude-Code-CyberSecurity-Skill) - Nineteen skills spanning offensive security, defensive operations, reverse engineering, threat hunting, and SOC automation. `SKILL.md`.
 - [DAILA](https://github.com/mahaloz/DAILA) - Decompiler-agnostic plugin for using AI assistance inside your decompiler.
 - [Gepetto](https://github.com/JusticeRage/Gepetto) - IDA plugin that queries language models to explain and rename decompiled functions.
 - [HexStrike AI](https://github.com/0x4m4/hexstrike-ai) - MCP server that gives agents a large toolkit of offensive security tools for recon, scanning, and exploitation.
@@ -107,3 +114,9 @@ Task sets and ground truth for measuring whether a harness actually works.
 - [CyberGym](https://github.com/sunblaze-ucb/cybergym) - Berkeley's large-scale benchmark evaluating agents on real-world vulnerability reproduction.
 - [HackSynth](https://github.com/aielte-research/HackSynth) - Autonomous pentesting agent released with two CTF benchmark sets of 200 challenges drawn from PicoCTF and OverTheWire.
 - [NYU CTF Bench](https://github.com/NYU-LLM-CTF/nyuctf_agents) - D-CIPHER and baseline agents for the NYU CTF benchmark.
+
+## Readings
+
+Writing that has shaped how these harnesses get built. Same bar as the tools: results, not takes.
+
+- [Patterns and Problems in Emerging Multiagent Systems](https://www.anthropic.com/research/multiagent-systems) - Anthropic research on coordination failures and swarm behavior among agents, including a vulnerability-discovery experiment where a coordinated swarm found 266 vulnerabilities across 15 open-source projects against 21 for independent parallel agents.
