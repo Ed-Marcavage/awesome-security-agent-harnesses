@@ -120,3 +120,4 @@ Task sets and ground truth for measuring whether a harness actually works.
 Writing that has shaped how these harnesses get built. Same bar as the tools: results, not takes.
 
 - [Patterns and Problems in Emerging Multiagent Systems](https://www.anthropic.com/research/multiagent-systems) - Anthropic research on coordination failures and swarm behavior among agents, including a vulnerability-discovery experiment where a coordinated swarm found 266 vulnerabilities across 15 open-source projects against 21 for independent parallel agents.
+- [Towards Cybersecurity SuperIntelligence: What's the Best Harness for Cybersecurity?](https://arxiv.org/abs/2605.28334) - Benchmarks five agent scaffolds on 33 cybersecurity challenges and finds no single harness wins; a blackboard architecture combining structurally diverse scaffolds covers 57.6% of problems against 45.5% for the best individual scaffold.
