@@ -113,6 +113,7 @@ Task sets and ground truth for measuring whether a harness actually works.
 - [ADR](https://github.com/uber/ADR) - Uber's agent detection and response system, including a benchmark of 300+ agent-attack tasks across 133 MCP servers.
 - [AIRTBench](https://github.com/dreadnode/AIRTBench-Code) - Dreadnode's benchmark measuring autonomous AI red-teaming capability.
 - [ARVO](https://github.com/n132/ARVO) - Atlas of reproducible open-source vulnerabilities, used as ground truth for patching agents.
+- [CVE-GENIE](https://github.com/BUseclab/cve-genie) - Boston University multi-agent framework that reconstructs a vulnerable environment from a CVE entry and produces a verifiable exploit, [reproducing 428 of 841 CVEs](https://arxiv.org/abs/2509.01835) published in 2024-2025 at an average of $2.77 each.
 - [Cybench](https://github.com/andyzorigin/cybench) - Framework for evaluating language model agents on 40 professional CTF tasks.
 - [CyberGym](https://github.com/sunblaze-ucb/cybergym) - Berkeley's large-scale benchmark evaluating agents on real-world vulnerability reproduction.
 - [HackSynth](https://github.com/aielte-research/HackSynth) - Autonomous pentesting agent released with two CTF benchmark sets of 200 challenges drawn from PicoCTF and OverTheWire.
