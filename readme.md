@@ -45,13 +45,16 @@ Agents that attack running applications and infrastructure: reconnaissance, expl
 
 - [AIDA](https://github.com/Vasco0x4/AIDA) - Model-agnostic pentesting agent that reasons over a defined scope, executes in an isolated container, and keeps persistent assessment state across sessions.
 - [AWE](https://github.com/stuxlabs/AWE) - Research framework pairing a lightweight orchestration layer with memory-augmented, vulnerability-specific agent pipelines, evaluated on the XBOW benchmark.
+- [BlacksmithAI](https://github.com/yohannesgk/blacksmith) - Multi-agent pentesting framework that walks a target from reconnaissance through post-exploitation inside a Docker image preloaded with standard security tooling, driven from either a web UI or a CLI.
 - [CAI](https://github.com/aliasrobotics/cai) - Alias Robotics' framework for building cybersecurity agents, with tool and workflow primitives for offensive testing.
 - [CyberStrike](https://github.com/CyberStrikeus/CyberStrike) - Offensive-security harness coordinating autonomous agents over signed attack skills, built-in tools, and MCP integrations, mapped to MITRE ATT&CK and OWASP WSTG.
+- [hackingBuddyGPT](https://github.com/ipa-lab/hackingBuddyGPT) - TU Wien research framework for writing LLM pentesting agents in roughly 50 lines of code, released alongside reusable Linux privilege-escalation benchmarks and open-access evaluations.
 - [HPTSA](https://github.com/uiuc-kang-lab/HPTSA) - Research implementation behind *Teams of LLM Agents can Exploit Zero-Day Vulnerabilities*, using a supervisor agent to coordinate vulnerability-specialized subagents.
 - [Nebula](https://github.com/berylliumsec/nebula) - Penetration-testing assistant that automates recon, note-taking, and tool orchestration.
 - [NeuroSploit](https://github.com/JoasASantos/NeuroSploit) - Rust harness that turns a URL, repository, or host into an autonomous engagement, selecting only the specialist agents matching the surface and validating findings across models.
 - [PentAGI](https://github.com/vxcontrol/pentagi) - Fully autonomous multi-agent pentesting system with Docker isolation, planning and supervision, persistent memory, and a web control plane.
 - [Pentest Copilot](https://github.com/bugbasesecurity/pentest-copilot) - Agent that drives a Kali attack box end to end, installing tooling as needed, operating Burp and a real browser, and spawning parallel subagents.
+- [Pentest Swarm AI](https://github.com/Armur-Ai/Pentest-Swarm-AI) - Go harness coordinating recon, classification, exploitation, and reporting agents through a shared pheromone blackboard, waking each agent by finding weight rather than a fixed pipeline order.
 - [PentestAgent](https://github.com/GH05TCREW/pentestagent) - Black-box testing framework with autonomous and multi-agent modes, attack playbooks, Kali execution, and persistent sessions.
 - [PentestGPT](https://github.com/GreyDGL/PentestGPT) - Automated penetration-testing agentic framework powered by large language models.
 - [RedAmon](https://github.com/samugit83/redamon) - End-to-end platform chaining recon, exploitation, and post-exploitation over a Neo4j attack graph, then triaging findings, patching the code, and opening pull requests.
@@ -113,6 +116,7 @@ Task sets and ground truth for measuring whether a harness actually works.
 - [Cybench](https://github.com/andyzorigin/cybench) - Framework for evaluating language model agents on 40 professional CTF tasks.
 - [CyberGym](https://github.com/sunblaze-ucb/cybergym) - Berkeley's large-scale benchmark evaluating agents on real-world vulnerability reproduction.
 - [HackSynth](https://github.com/aielte-research/HackSynth) - Autonomous pentesting agent released with two CTF benchmark sets of 200 challenges drawn from PicoCTF and OverTheWire.
+- [Linux Privilege-Escalation Benchmark](https://github.com/ipa-lab/benchmark-privesc-linux) - Reproducible local privilege-escalation scenarios from the hackingBuddyGPT team, used as the ground truth in their published agent evaluations.
 - [NYU CTF Bench](https://github.com/NYU-LLM-CTF/nyuctf_agents) - D-CIPHER and baseline agents for the NYU CTF benchmark.
 
 ## Readings
