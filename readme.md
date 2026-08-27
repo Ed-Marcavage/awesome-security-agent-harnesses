@@ -28,17 +28,17 @@ Entries tagged `SKILL.md` are skill packs rather than runnable harnesses: method
 
 Harnesses that run coding agents against source code: discovery, triage, validation, and patching.
 
+- [Anthropic Defending Code Reference Harness](https://github.com/anthropics/defending-code-reference-harness) - Reference implementation for autonomous vulnerability discovery and remediation with Claude, with skills for threat modeling, scanning, triage, and patching.
 - [audit](https://github.com/evilsocket/audit) - Eight-stage discovery agent built on the Claude Code SDK, combining many narrow agents, deliberate disagreement between them, and an explicit reachability gate.
+- [Capital One VulnHunter](https://github.com/capitalone/VulnHunter) - Agentic security tool applying proactive, attacker-first analysis directly to source code.
 - [Clearwing](https://github.com/Lazarus-AI/clearwing) - Autonomous source-code hunter that ranks files, fans out specialist agents, and treats sanitizer crashes as ground truth, with a separate network-pentest mode.
-- [Cloudflare Security Audit](https://github.com/cloudflare/security-audit-skill) - Cloudflare's six-phase audit skill: parallel hunting agents attack the codebase from different angles, separate agents try to disprove each finding, and fresh agents verify the schema-validated `findings.json` against source. Seeded the fleet-wide harness described in [Build your own vulnerability harness](https://blog.cloudflare.com/build-your-own-vulnerability-harness). `SKILL.md`.
-- [Codex Security](https://github.com/openai/codex-security) - OpenAI's CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities with Codex.
-- [Deepsec](https://github.com/vercel-labs/deepsec) - Vercel Labs' security harness for finding vulnerabilities in a codebase using coding agents.
-- [Defending Code Reference Harness](https://github.com/anthropics/defending-code-reference-harness) - Anthropic's reference implementation for autonomous vulnerability discovery and remediation with Claude, with skills for threat modeling, scanning, triage, and patching.
+- [Cloudflare Security Audit](https://github.com/cloudflare/security-audit-skill) - Six-phase audit skill: parallel hunting agents attack the codebase from different angles, separate agents try to disprove each finding, and fresh agents verify the schema-validated `findings.json` against source. `SKILL.md`.
+- [OpenAI Codex Security](https://github.com/openai/codex-security) - CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities with Codex.
 - [OpenHack](https://github.com/openhackai/OpenHack) - Multi-agent scanner running recon, specialist hunts, independent validation, and sandbox and browser verification, using only open-source models.
 - [RAPTOR](https://github.com/gadievron/raptor) - Autonomous research framework chaining static analysis, binary analysis, vulnerability validation, exploit generation, and patch writing over a codebase or binary. `SKILL.md`.
-- [Trail of Bits Skills](https://github.com/trailofbits/skills) - Trail of Bits' skills for security research, vulnerability detection, and audit workflows, distilled from the firm's audit practice. `SKILL.md`.
-- [Visa Vulnerability Agentic Harness](https://github.com/visa/visa-vulnerability-agentic-harness) - Visa's agentic SAST pipeline for autonomous vulnerability discovery, remediation, and validation, emitting Markdown and SARIF reports.
-- [VulnHunter](https://github.com/capitalone/VulnHunter) - Capital One's agentic security tool applying proactive, attacker-first analysis directly to source code.
+- [Trail of Bits Skills](https://github.com/trailofbits/skills) - Skills for security research, vulnerability detection, and audit workflows, distilled from the firm's audit practice. `SKILL.md`.
+- [Vercel Labs Deepsec](https://github.com/vercel-labs/deepsec) - Security harness for finding vulnerabilities in a codebase using coding agents.
+- [Visa Vulnerability Agentic Harness](https://github.com/visa/visa-vulnerability-agentic-harness) - Agentic SAST pipeline for autonomous vulnerability discovery, remediation, and validation, emitting Markdown and SARIF reports.
 
 ## Pentesting Agents
 
