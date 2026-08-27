@@ -30,6 +30,7 @@ Harnesses that run coding agents against source code: discovery, triage, validat
 
 - [audit](https://github.com/evilsocket/audit) - Eight-stage discovery agent built on the Claude Code SDK, combining many narrow agents, deliberate disagreement between them, and an explicit reachability gate.
 - [Clearwing](https://github.com/Lazarus-AI/clearwing) - Autonomous source-code hunter that ranks files, fans out specialist agents, and treats sanitizer crashes as ground truth, with a separate network-pentest mode.
+- [Cloudflare Security Audit](https://github.com/cloudflare/security-audit-skill) - Cloudflare's six-phase audit skill: parallel hunting agents attack the codebase from different angles, separate agents try to disprove each finding, and fresh agents verify the schema-validated `findings.json` against source. Seeded the fleet-wide harness described in [Build your own vulnerability harness](https://blog.cloudflare.com/build-your-own-vulnerability-harness). `SKILL.md`.
 - [Codex Security](https://github.com/openai/codex-security) - OpenAI's CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities with Codex.
 - [Deepsec](https://github.com/vercel-labs/deepsec) - Vercel Labs' security harness for finding vulnerabilities in a codebase using coding agents.
 - [Defending Code Reference Harness](https://github.com/anthropics/defending-code-reference-harness) - Anthropic's reference implementation for autonomous vulnerability discovery and remediation with Claude, with skills for threat modeling, scanning, triage, and patching.
