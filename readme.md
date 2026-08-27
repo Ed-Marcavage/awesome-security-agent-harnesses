@@ -18,7 +18,7 @@ Please read the [contribution guidelines](contributing.md) before opening a pull
 
 ## What Is a Security Agent Harness
 
-A security agent harness is everything wrapped around the model: the sandbox it runs in, the analysis tools it can call, the prompts and skills that encode a methodology, and the evals you use to check it. Most of the engineering in these systems lives here rather than in the model. Cloudflare, after growing one from a single skill into a fleet scanner, put it plainly: the harness is the bit that lasts. Models get swapped out; the orchestration around them is what you keep.
+A security agent harness is everything wrapped around the model: the sandbox it runs in, the analysis tools it can call, the prompts and skills that encode a methodology, and the evals you use to check it. Most of the engineering lives here rather than in the model — or as Cloudflare put it after scaling one across its own fleet, the harness is the bit that lasts.
 
 Agents are good at producing plausible findings and bad at telling which ones are real. An agent will edit the source so its own exploit works, then report the bug it just created. So the metric that matters is not recall, which nobody can measure without already knowing every bug in a codebase, but how few unconfirmed findings reach a human: Cloudflare's pipeline cut 20,799 raw candidates down to 12,057 that survived validation, then folded away another 5,442 as duplicates. A harness that can reproduce a crash, replay an input, or re-run a static analyzer is how you throw out the bad ones before a human ever sees them.
 
