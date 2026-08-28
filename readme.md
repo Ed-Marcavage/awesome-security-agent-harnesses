@@ -68,7 +68,11 @@ Agents that attack running applications and infrastructure: reconnaissance, expl
 
 Harnesses that use models to find crashes and generate patches.
 
+- [ChatAFL](https://github.com/ChatAFLndss/ChatAFL) - Protocol fuzzer built on AFLNet that prompts a model for a machine-readable grammar, for richer seed messages, and for new inputs whenever coverage plateaus, published at NDSS 2024 and packaged as a ProfuzzBench artifact.
+- [FirmAgent](https://github.com/vul337/FirmAgent) - Hybrid IoT firmware pipeline from Tsinghua's VUL337 group, pairing a device-aware API fuzzer with an LLM taint-analysis agent that turns sink-reaching findings into proof-of-concept exploits, published at NDSS 2026.
+- [Fuzz4All](https://github.com/fuzz4all/fuzz4all) - Universal fuzzer using a model as its input generation and mutation engine, with an autoprompting step that tunes the prompt per target so one tool covers many input languages, from the ICSE 2024 paper.
 - [OSS-Fuzz-Gen](https://github.com/google/oss-fuzz-gen) - Google's framework for generating and benchmarking fuzz targets with LLMs across C/C++, Java, and Python.
+- [PromptFuzz](https://github.com/FuzzAnything/PromptFuzz) - Fuzz-driver generator that mutates prompts in a coverage-guided loop to explore complex API interrelationships, reporting 40.12% branch coverage on its tested libraries, 1.61x OSS-Fuzz's, and 33 confirmed security bugs including three CVEs.
 
 ## DARPA AIxCC Cyber Reasoning Systems
 
