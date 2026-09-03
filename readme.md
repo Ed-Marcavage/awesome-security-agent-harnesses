@@ -111,6 +111,7 @@ Isolation for running agent-generated code and untrusted targets.
 - [Firecracker](https://github.com/firecracker-microvm/firecracker) - AWS's minimal microVM monitor, a common hardware-isolation primitive for running untrusted code.
 - [gVisor](https://github.com/google/gvisor) - Google's application kernel that intercepts syscalls to sandbox untrusted workloads without a full VM.
 - [Microsandbox](https://github.com/microsandbox/microsandbox) - Local-first microVM runtime for executing untrusted agent code.
+- [SandBase Harness](https://github.com/sandbaseai/sandbase-harness) - Local-first agent runtime with sandboxed sessions, governed tool access, credential management, approvals, and audit/replay for inspectable security-sensitive runs.
 - [Sandbox Runtime](https://github.com/anthropic-experimental/sandbox-runtime) - Anthropic's lightweight tool for enforcing filesystem and network restrictions on agents.
 
 ## Benchmarks and Evals
