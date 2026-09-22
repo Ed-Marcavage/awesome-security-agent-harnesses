@@ -4,6 +4,8 @@
 
 Please read the [contribution guidelines](contributing.md) before opening a pull request.
 
+Recent additions and removals are in the [changelog](changelog.md).
+
 ## Contents
 
 - [What Is a Security Agent Harness](#what-is-a-security-agent-harness)
