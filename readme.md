@@ -39,6 +39,7 @@ Harnesses that run coding agents against source code: discovery, triage, validat
 - [OpenAI Codex Security](https://github.com/openai/codex-security) - CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities with Codex.
 - [OpenHack](https://github.com/openhackai/OpenHack) - Multi-agent scanner running recon, specialist hunts, independent validation, and sandbox and browser verification, using only open-source models.
 - [RAPTOR](https://github.com/gadievron/raptor) - Autonomous research framework chaining static analysis, binary analysis, vulnerability validation, exploit generation, and patch writing over a codebase or binary. `SKILL.md`.
+- [rust-in-peace](https://github.com/scadastrangelove/rust-in-peace) - Vulnerability research harness for Rust with independent review passes, adversarial triage, dynamic verification, and an experimental Android APK analysis profile.
 - [Trail of Bits Skills](https://github.com/trailofbits/skills) - Skills for security research, vulnerability detection, and audit workflows, distilled from the firm's audit practice. `SKILL.md`.
 - [Vercel Labs Deepsec](https://github.com/vercel-labs/deepsec) - Security harness for finding vulnerabilities in a codebase using coding agents.
 - [Visa Vulnerability Agentic Harness](https://github.com/visa/visa-vulnerability-agentic-harness) - Agentic SAST pipeline for autonomous vulnerability discovery, remediation, and validation, emitting Markdown and SARIF reports.
