@@ -115,7 +115,7 @@ Security capabilities exposed to somebody else's agent: MCP servers, disassemble
 - [IDA Pro MCP](https://github.com/mrexodia/ida-pro-mcp) - MCP server exposing IDA Pro decompilation, cross-references, and type inference to coding agents.
 - [Lemmalog](https://github.com/JordyZomer/lemmalog) - Datalog engine for agent memory with provenance-tracked facts, incremental derivation, and an MCP server, the implementation behind the *Turning LLM Memory into Program Analysis* reading.
 - [LLM4Decompile](https://github.com/albertan017/LLM4Decompile) - Open models and pipeline for decompiling binary code into readable C.
-- [REA](https://github.com/morluto/rea) - Local CLI and MCP tools for agent-assisted reverse engineering, returning artifact identity, provenance, and explicit analysis limitations.
+- [REA](https://github.com/morluto/rea) - Local CLI and MCP analysis tools with source-linked evidence for shipped binaries and JavaScript/Electron apps, plus a reverse-engineer-anything skill; deep native analysis requires separately installed Hopper, Ghidra, or IDA.
 - [ReVa](https://github.com/cyberkaida/reverse-engineering-assistant) - Ghidra extension providing an MCP server for agent-driven reverse engineering.
 - [Statsnet MCP](https://github.com/usenetstate/statsnet-mcp) - Background check any company in the world: registration, executives, courts and finances. Remote: `https://statsnet.co/mcp` · Registry: `io.github.usenetstate/statsnet`.
 
