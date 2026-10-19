@@ -1,8 +1,10 @@
 # Awesome Security Agent Harnesses [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> AI agents for pentesting, code audit, fuzzing, vulnerability discovery, and reverse engineering — harnesses, sandboxes, security MCP servers, benchmarks, and evals.
+> AI agents for pentesting, code audit, fuzzing, vulnerability discovery, and reverse engineering: harnesses, sandboxes, security MCP servers, benchmarks, and evals.
 
 Please read the [contribution guidelines](contributing.md) before opening a pull request.
+
+Building or studying security agent harnesses? Join the [Discord](https://discord.gg/vkVn2xEQn) to trade notes, benchmark results, and new finds.
 
 ## Contents
 
@@ -18,7 +20,7 @@ Please read the [contribution guidelines](contributing.md) before opening a pull
 
 ## What Is a Security Agent Harness
 
-A security agent harness is everything wrapped around the model: the sandbox it runs in, the analysis tools it can call, the prompts and skills that encode a methodology, and the evals you use to check it. Most of the engineering lives here rather than in the model — or as Cloudflare put it after scaling one across its own fleet, the harness is the bit that lasts.
+A security agent harness is everything wrapped around the model: the sandbox it runs in, the analysis tools it can call, the prompts and skills that encode a methodology, and the evals you use to check it. Most of the engineering lives here rather than in the model, or as Cloudflare put it after scaling one across its own fleet, the harness is the bit that lasts.
 
 Agents are good at producing plausible findings and bad at telling which ones are real. An agent will edit the source so its own exploit works, then report the bug it just created. So the metric that matters is not recall, which nobody can measure without already knowing every bug in a codebase, but how few unconfirmed findings reach a human: Cloudflare's pipeline cut 20,799 raw candidates down to 12,057 that survived validation, then folded away another 5,442 as duplicates. A harness that can reproduce a crash, replay an input, or re-run a static analyzer is how you throw out the bad ones before a human ever sees them.
 
@@ -117,7 +119,6 @@ Security capabilities exposed to somebody else's agent: MCP servers, disassemble
 - [LLM4Decompile](https://github.com/albertan017/LLM4Decompile) - Open models and pipeline for decompiling binary code into readable C.
 - [REA](https://github.com/morluto/rea) - Local CLI and MCP analysis tools with source-linked evidence for shipped binaries and JavaScript/Electron apps, plus a reverse-engineer-anything skill; deep native analysis requires separately installed Hopper, Ghidra, or IDA.
 - [ReVa](https://github.com/cyberkaida/reverse-engineering-assistant) - Ghidra extension providing an MCP server for agent-driven reverse engineering.
-- [Statsnet MCP](https://github.com/usenetstate/statsnet-mcp) - Background check any company in the world: registration, executives, courts and finances. Remote: `https://statsnet.co/mcp` · Registry: `io.github.usenetstate/statsnet`.
 
 ## Agent Sandboxes
 

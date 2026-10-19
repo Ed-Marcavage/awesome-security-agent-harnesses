@@ -2,19 +2,21 @@
 
 Thanks for helping curate this list. The goal is a short list where every entry earned its place, not a directory of everything with "security" and "agent" in the readme.
 
+Not sure an entry fits, or want to talk it through first? Ask in the [Discord](https://discord.gg/vkVn2xEQn).
+
 ## What belongs here
 
-The test: an entry belongs here if it is part of the stack you would assemble to run a security agent against a benchmark like Cybench or CyberGym — the harness itself, the analysis tools it calls, the sandbox it executes in, or the benchmark that scores it.
+The test: an entry belongs here if it is part of the stack you would assemble to run a security agent against a benchmark like Cybench or CyberGym: the harness itself, the analysis tools it calls, the sandbox it executes in, or the benchmark that scores it.
 
 An entry should satisfy all of these:
 
-- **On topic.** It passes the test above. General agent frameworks belong in [awesome-agent-harness](https://github.com/Picrew/awesome-agent-harness), and general-purpose coding agents qualify only if they ship an explicit security mode. Tools for securing AI systems — prompt-injection scanners, model red-teaming, agent guardrails — are out of scope, and belong in the broader AI-security lists.
+- **On topic.** It passes the test above. General agent frameworks belong in [awesome-agent-harness](https://github.com/Picrew/awesome-agent-harness), and general-purpose coding agents qualify only if they ship an explicit security mode. Tools for securing AI systems (prompt-injection scanners, model red-teaming, agent guardrails) are out of scope, and belong in the broader AI-security lists.
 - **Actually awesome.** You have used it, read its source, or can point to real results (found vulnerabilities, published evaluations, competition placement). A firsthand read of the code that can say why the design earns its place counts alongside downstream results, so a new project with no track record can qualify on its engineering. "Looks interesting" is not enough. Stars and adoption are not criteria: a popular or well-known project earns no place here that an unknown one would not.
 - **Alive.** Maintained, documented, and not archived or deprecated. One exception: competition submissions, where the frozen snapshot *is* the artifact and the results are the evidence. The AIxCC cyber reasoning systems are listed on that basis.
 
 ## Entry format
 
-```
+```markdown
 - [Name](https://example.com) - Description that starts with a capital letter and ends with a period.
 ```
 
