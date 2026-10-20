@@ -1,10 +1,10 @@
-# Awesome Security Agent Harnesses [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Security Agent Harnesses [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Discord](https://img.shields.io/badge/discord-join-5865F2?logo=discord&logoColor=white)](https://discord.gg/vkVn2xEQn)
 
 > AI agents for pentesting, code audit, fuzzing, vulnerability discovery, and reverse engineering: harnesses, sandboxes, security MCP servers, benchmarks, and evals.
 
 Please read the [contribution guidelines](contributing.md) before opening a pull request.
 
-Building or studying security agent harnesses? Join the [Discord](https://discord.gg/vkVn2xEQn) to trade notes, benchmark results, and new finds.
+Building or studying security agent harnesses? Join the [Discord](https://discord.com/invite/vkVn2xEQn) to trade notes, benchmark results, and new finds.
 
 ## Contents
 
