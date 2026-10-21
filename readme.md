@@ -76,6 +76,7 @@ Agents that attack running applications and infrastructure: reconnaissance, expl
 - [Shannon](https://github.com/KeygraphHQ/shannon) - AI pentester for web applications and APIs that analyzes source code, identifies attack vectors, and executes real exploits to prove findings.
 - [Strix](https://github.com/usestrix/strix) - Open-source AI penetration-testing agent that finds and helps fix application vulnerabilities.
 - [Transilience Community Tools](https://github.com/transilienceai/communitytools) - Twenty-six skills and three tool integrations covering the pentest lifecycle from recon to reporting, with a published 104/104 result on the maintainers' CTF benchmark. `SKILL.md`.
+- [Vulnerator AI](https://github.com/irraz/vulnerator-ai) - Autonomous OODA pentest agent driven by Hermes (Nous Research) that drives Kali tooling directly over an MCP server.
 
 ## Fuzzing and Vulnerability Discovery
 
