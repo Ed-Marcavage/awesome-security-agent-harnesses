@@ -39,6 +39,7 @@ Harnesses that run coding agents against source code: discovery, triage, validat
 - [Krait](https://github.com/ZealynxSecurity/krait) - Claude Code audit methodology for Solidity with 101 heuristics, 26 analysis modules, and 8 kill gates that try to disprove every finding, measured blind on 50 Code4rena contests at 100% precision on the v8 baseline.
 - [Open Kritt](https://github.com/Kritt-ai/open-kritt) - Self-hosted orchestrator that runs agents to find and validate vulnerabilities, export canonical findings, and rank severity, with bug-bounty payouts credited to its Blockian researcher identity.
 - [OpenAI Codex Security](https://github.com/openai/codex-security) - CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities with Codex.
+- [OpenAnt](https://github.com/knostic/OpenAnt) - Source-code auditing pipeline that decomposes repositories into analysis units, offers adversarial verification of candidate findings, and can run Docker-isolated dynamic tests before reporting.
 - [OpenHack](https://github.com/openhackai/OpenHack) - Multi-agent scanner running recon, specialist hunts, independent validation, and sandbox and browser verification, using only open-source models.
 - [RAPTOR](https://github.com/gadievron/raptor) - Autonomous research framework chaining static analysis, binary analysis, vulnerability validation, exploit generation, and patch writing over a codebase or binary. `SKILL.md`.
 - [rust-in-peace](https://github.com/scadastrangelove/rust-in-peace) - Vulnerability research harness for Rust with independent review passes, adversarial triage, dynamic verification, and an experimental Android APK analysis profile.
@@ -58,10 +59,12 @@ Agents that attack running applications and infrastructure: reconnaissance, expl
 - [CAI](https://github.com/aliasrobotics/cai) - Alias Robotics' framework for building cybersecurity agents, with tool and workflow primitives for offensive testing.
 - [Cairn](https://github.com/oritera/Cairn) - Pentesting as state-space search: Claude Code, Codex, or Pi workers with no fixed roles coordinate only through a blackboard of facts, intents, and hints, and solved all 54 problems at the Tencent Cloud AI pentest challenge, the only team to clear the board.
 - [CHYing-agent](https://github.com/yhy0/CHYing-agent) - Human-AI teaming pentester with an orchestrator coordinating command-execution, browser, C2, and reverse-engineering subagents over Kali, rebuilt on the Claude Code Python SDK; the ninth-place finisher in the first Tencent Cloud AI pentest challenge.
+- [Cochise](https://github.com/andreashappe/cochise) - Minimal Active Directory pentesting harness with separate planning and execution, persistent knowledge, and replayable trajectories, released with GOAD evaluation documentation.
 - [CyberStrike](https://github.com/CyberStrikeus/CyberStrike) - Offensive-security harness coordinating autonomous agents over signed attack skills, built-in tools, and MCP integrations, mapped to MITRE ATT&CK and OWASP WSTG.
 - [Dark-Moon](https://github.com/ASCIT31/Dark-Moon) - Open-source (GPLv3) autonomous AI penetration-testing CLI coordinating 50 specialist agents and 140+ offensive tools over MCP, with a dedicated LLM-security agent for the OWASP LLM Top 10; runs on a local (Ollama/llama.cpp) or cloud LLM.
 - [hackingBuddyGPT](https://github.com/ipa-lab/hackingBuddyGPT) - TU Wien research framework for writing LLM pentesting agents in roughly 50 lines of code, released alongside reusable Linux privilege-escalation benchmarks and open-access evaluations.
 - [HPTSA](https://github.com/uiuc-kang-lab/HPTSA) - Research implementation behind *Teams of LLM Agents can Exploit Zero-Day Vulnerabilities*, using a supervisor agent to coordinate vulnerability-specialized subagents.
+- [Incalmo](https://github.com/cylabcyberautonomy/Incalmo) - Multi-host network pentesting framework separating high-level attack actions from low-level execution, with shared environment state, attack-graph services, and an MHBench integration.
 - [LuaN1aoAgent](https://github.com/SanMuzZzZz/LuaN1aoAgent) - Autonomous pentester built on causal graph reasoning, splitting Planner, Executor, and Observer roles over durable events and evidence-backed graph memory; the BinX team's third-place project from the first Tencent Cloud AI pentest challenge, since rewritten on TypeScript and the Pi SDK.
 - [Nebula](https://github.com/berylliumsec/nebula) - Penetration-testing assistant that automates recon, note-taking, and tool orchestration.
 - [NeuroSploit](https://github.com/Red-Team-Leaders/NeuroSploit) - Rust harness that turns a URL, repository, or host into an autonomous engagement, selecting only the specialist agents matching the surface and validating findings across models.
@@ -112,6 +115,7 @@ Security capabilities exposed to somebody else's agent: MCP servers, disassemble
 - [Binary Ninja Headless MCP](https://github.com/mrphrazer/binary-ninja-headless-mcp) - Headless Binary Ninja MCP server exposing 180 analysis tools to agents.
 - [Burp Suite MCP](https://github.com/PortSwigger/mcp-server) - PortSwigger's own MCP server, connecting agents to Burp Suite's proxy, scanner, and repeater.
 - [Claude Code CyberSecurity Skills](https://github.com/Masriyan/Claude-Code-CyberSecurity-Skill) - Nineteen skills spanning offensive security, defensive operations, reverse engineering, threat hunting, and SOC automation. `SKILL.md`.
+- [codebadger](https://github.com/qcri/codebadger) - Containerized MCP server exposing Joern code-property graphs to agents for data-flow tracing, taint analysis, and program slicing across source-code repositories.
 - [DAILA](https://github.com/mahaloz/DAILA) - Decompiler-agnostic plugin for using AI assistance inside your decompiler.
 - [Gepetto](https://github.com/JusticeRage/Gepetto) - IDA plugin that queries language models to explain and rename decompiled functions.
 - [HexStrike AI](https://github.com/0x4m4/hexstrike-ai) - MCP server that gives agents a large toolkit of offensive security tools for recon, scanning, and exploitation.
@@ -146,9 +150,11 @@ Task sets and ground truth for measuring whether a harness actually works.
 - [EVMBench](https://github.com/paradigmxyz/evmbench) - OpenAI and Paradigm benchmark of 46 dated real-world audits with detect, patch, and exploit modes, graded by LLM judge, Forge tests, and transaction execution respectively; agents plug in as configs.
 - [FuzzingBrain-Bench](https://github.com/fuzzingbrain/FuzzingBrain-Bench) - Seventy-seven real zero-days across 43 C, C++, and Java projects where the agent gets only the fuzz harness and vulnerable source, graded offline and deterministically by the distinct sanitizer crashes it triggers.
 - [HackSynth](https://github.com/aielte-research/HackSynth) - Autonomous pentesting agent released with two CTF benchmark sets of 200 challenges drawn from PicoCTF and OverTheWire.
+- [HoF-Bench](https://github.com/weareaisle/hof-bench) - Ninety-five public CVEs across eight pinned repositories, with a reference scanner and published findings; evaluates scoped rediscovery using ground-truth-selected files and LLM-based matching.
 - [Linux Privilege-Escalation Benchmark](https://github.com/ipa-lab/benchmark-privesc-linux) - Reproducible local privilege-escalation scenarios from the hackingBuddyGPT team, used as the ground truth in their published agent evaluations.
 - [NYU CTF Bench](https://github.com/NYU-LLM-CTF/nyuctf_agents) - D-CIPHER and baseline agents for the NYU CTF benchmark.
 - [scone-bench](https://github.com/anthropics/scone-bench) - Anthropic's 417-task benchmark of historical DeFi incidents where the agent writes a working exploit against a forked chain and the grader restarts anvil before scoring; released frozen, not maintained.
+- [SEC-bench Pro](https://github.com/SEC-bench/SEC-bench-Pro) - Long-horizon security benchmark spanning V8, SpiderMonkey, and Linux, with reproducible environments and a grader combining vulnerable/fixed execution evidence with LLM judgments and source review.
 
 ## Readings
 
