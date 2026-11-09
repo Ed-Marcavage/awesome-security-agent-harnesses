@@ -2,6 +2,21 @@
 
 > AI agents for pentesting, code audit, fuzzing, vulnerability discovery, and reverse engineering: harnesses, sandboxes, security MCP servers, benchmarks, and evals.
 
+**Explore the papers, code, and people behind security agents.** Which papers and benchmarks should you explore next?
+
+This list is a starting point. I built Papers With Code Cyber to make the wider collection easier to explore: cybersecurity papers, engineering posts, and repositories you can filter by topic, target, and contribution—with organizations and developers connected to their work.
+
+Built on [Hugging Face’s open-source Papers with Code](https://github.com/huggingface/paperswithcode), focused on cybersecurity agent harnesses.
+
+https://github.com/user-attachments/assets/e3a5a1a0-0329-4f5a-9fe9-8cec1312ba9b
+
+**[Explore the live catalog →](https://paperswithcode-cyber.com/?utm_source=github&utm_medium=readme&utm_campaign=awesome-security-agent-harnesses&utm_content=catalog)** · [Connect your agent through MCP](https://paperswithcode-cyber.com/mcp?utm_source=github&utm_medium=readme&utm_campaign=awesome-security-agent-harnesses&utm_content=mcp) — no account or API key required.
+
+**Open source & contributions**
+
+- **Suggest a paper, post, or repository:** contribute to this awesome list or [request a catalog addition](https://github.com/Ed-Marcavage/paperswithcode-cyber/issues/new).
+- **Improve the tools:** bugs, feature requests, and PRs welcome in the [website/API](https://github.com/Ed-Marcavage/paperswithcode-cyber) and [MCP/CLI](https://github.com/Ed-Marcavage/pwc-cli-cyber) repositories.
+
 Please read the [contribution guidelines](contributing.md) before opening a pull request.
 
 Building or studying security agent harnesses? Join the [Discord](https://discord.com/invite/vkVn2xEQn) to trade notes, benchmark results, and new finds.
