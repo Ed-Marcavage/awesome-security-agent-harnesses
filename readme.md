@@ -145,6 +145,7 @@ Security capabilities exposed to somebody else's agent: MCP servers, disassemble
 - [LLM4Decompile](https://github.com/albertan017/LLM4Decompile) - Open models and pipeline for decompiling binary code into readable C.
 - [REA](https://github.com/morluto/rea) - Local CLI and MCP analysis tools with source-linked evidence for shipped binaries and JavaScript/Electron apps, plus a reverse-engineer-anything skill; deep native analysis requires separately installed Hopper, Ghidra, or IDA.
 - [ReVa](https://github.com/cyberkaida/reverse-engineering-assistant) - Ghidra extension providing an MCP server for agent-driven reverse engineering.
+- [usb-rea](https://github.com/emirmrkaljevic/usb-rea) - MCP server and CLI that infers USB gadget protocols from labelled captures and generates a pyusb driver.
 
 ## Agent Sandboxes
 
