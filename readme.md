@@ -45,6 +45,7 @@ Entries tagged `SKILL.md` are skill packs rather than runnable harnesses: method
 
 Harnesses that run coding agents against source code: discovery, triage, validation, and patching.
 
+- [0 Security](https://github.com/0sec-labs/0) - Security harness with a local web console for vulnerability research, verification, and fixes, exposing the same reusable workflows through CLI and MCP.
 - [Anthropic Defending Code Reference Harness](https://github.com/anthropics/defending-code-reference-harness) - Reference implementation for autonomous vulnerability discovery and remediation with Claude, with skills for threat modeling, scanning, triage, and patching.
 - [audit](https://github.com/evilsocket/audit) - Eight-stage discovery agent built on the Claude Code SDK, combining many narrow agents, deliberate disagreement between them, and an explicit reachability gate.
 - [Capital One VulnHunter](https://github.com/capitalone/VulnHunter) - Agentic security tool applying proactive, attacker-first analysis directly to source code.
@@ -73,6 +74,7 @@ Agents that attack running applications and infrastructure: reconnaissance, expl
 - [BugTraceAI](https://github.com/BugTraceAI/BugTraceAI) - Multi-agent platform for authorized web application security testing with independent validation, evidence capture, and reporting.
 - [CAI](https://github.com/aliasrobotics/cai) - Alias Robotics' framework for building cybersecurity agents, with tool and workflow primitives for offensive testing.
 - [Cairn](https://github.com/oritera/Cairn) - Pentesting as state-space search: Claude Code, Codex, or Pi workers with no fixed roles coordinate only through a blackboard of facts, intents, and hints, and solved all 54 problems at the Tencent Cloud AI pentest challenge, the only team to clear the board.
+- [Chain Reactors Cyber Harness](https://github.com/chainreactors/cyber-harness) - Go harness assembling scanning, terminal tools, browser automation, and subagents through a shared extension lifecycle, with entry points for pentesting and source-code or binary audits.
 - [CHYing-agent](https://github.com/yhy0/CHYing-agent) - Human-AI teaming pentester with an orchestrator coordinating command-execution, browser, C2, and reverse-engineering subagents over Kali, rebuilt on the Claude Code Python SDK; the ninth-place finisher in the first Tencent Cloud AI pentest challenge.
 - [Cochise](https://github.com/andreashappe/cochise) - Minimal Active Directory pentesting harness with separate planning and execution, persistent knowledge, and replayable trajectories, released with GOAD evaluation documentation.
 - [CyberStrike](https://github.com/CyberStrikeus/CyberStrike) - Offensive-security harness coordinating autonomous agents over signed attack skills, built-in tools, and MCP integrations, mapped to MITRE ATT&CK and OWASP WSTG.
