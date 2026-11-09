@@ -8,9 +8,13 @@ This list is a starting point. I built Papers With Code Cyber to make the wider 
 
 Built on [Hugging Face’s open-source Papers with Code](https://github.com/huggingface/paperswithcode), focused on cybersecurity agent harnesses.
 
-https://github.com/user-attachments/assets/e3a5a1a0-0329-4f5a-9fe9-8cec1312ba9b
+<!--lint disable double-link -->
+[![Animated preview of Trending, catalog filters, organizations, developers, and MCP](https://raw.githubusercontent.com/Ed-Marcavage/paperswithcode-cyber/d9d7467dc8be7ed72c769da85bc832727212a094/docs/media/catalog-preview.gif)](https://paperswithcode-cyber.com/?utm_source=github&utm_medium=readme&utm_campaign=awesome-security-agent-harnesses&utm_content=catalog)
+
+[Watch the full 55-second demo](https://paperswithcode-cyber.com/catalog-demo.mp4)
 
 **[Explore the live catalog →](https://paperswithcode-cyber.com/?utm_source=github&utm_medium=readme&utm_campaign=awesome-security-agent-harnesses&utm_content=catalog)** · [Connect your agent through MCP](https://paperswithcode-cyber.com/mcp?utm_source=github&utm_medium=readme&utm_campaign=awesome-security-agent-harnesses&utm_content=mcp) — no account or API key required.
+<!--lint enable double-link -->
 
 **Open source & contributions**
 
