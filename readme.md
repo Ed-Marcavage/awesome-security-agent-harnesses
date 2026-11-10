@@ -1,6 +1,8 @@
 # Awesome Security Agent Harnesses [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Discord](https://img.shields.io/badge/discord-join-5865F2?logo=discord&logoColor=white)](https://discord.gg/vkVn2xEQn)
 
-> AI agents for pentesting, code audit, fuzzing, vulnerability discovery, and reverse engineering: harnesses, sandboxes, security MCP servers, benchmarks, and evals.
+> A curated list of AI pentesting tools and security agent harnesses for code audit, vulnerability discovery, fuzzing, and reverse engineering.
+
+Compare agent runtimes, security tool integrations, sandboxes, and evaluation benchmarks, with links to source code.
 
 **Explore the papers, code, and people behind security agents.** Which papers and benchmarks should you explore next?
 
