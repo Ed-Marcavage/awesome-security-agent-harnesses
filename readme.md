@@ -160,6 +160,7 @@ Isolation for running agent-generated code and untrusted targets.
 - [E2B](https://github.com/e2b-dev/E2B) - Sandboxed cloud environments purpose-built for running agent-generated code.
 - [Firecracker](https://github.com/firecracker-microvm/firecracker) - AWS's minimal microVM monitor, a common hardware-isolation primitive for running untrusted code.
 - [gVisor](https://github.com/google/gvisor) - Google's application kernel that intercepts syscalls to sandbox untrusted workloads without a full VM.
+- [HOL Guard](https://hol.org/guard) - Local-first policy gate for AI coding agents: checks shell commands, secret reads, MCP tool calls and package installs against your rules and pauses risky ones for approval before they run. Apache-2.0.
 - [Microsandbox](https://github.com/microsandbox/microsandbox) - Local-first microVM runtime for executing untrusted agent code.
 - [Sandbox Runtime](https://github.com/anthropic-experimental/sandbox-runtime) - Anthropic's lightweight tool for enforcing filesystem and network restrictions on agents.
 
