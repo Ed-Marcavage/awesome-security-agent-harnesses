@@ -1,4 +1,4 @@
-# Awesome Security Agent Harnesses [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Discord](https://img.shields.io/badge/discord-join-5865F2?logo=discord&logoColor=white)](https://discord.gg/vkVn2xEQn)
+# Awesome Security Agent Harnesses [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Discord](https://img.shields.io/badge/discord-join-5865F2?logo=discord&logoColor=white)](https://discord.gg/73FvhSy8vb)
 
 > A curated list of AI pentesting tools and security agent harnesses for code audit, vulnerability discovery, fuzzing, and reverse engineering.
 
@@ -7,7 +7,7 @@ Compare agent runtimes, security tool integrations, sandboxes, and evaluation be
 <!--lint disable double-link -->
 Want more than this list? [Browse 1,000+ cybersecurity papers and engineering posts on Papers With Code Cyber →](https://paperswithcode-cyber.com/?utm_source=github&utm_medium=readme&utm_campaign=awesome-security-agent-harnesses&utm_content=intro)
 
-Please read the [contribution guidelines](contributing.md) before opening a pull request. Building or studying security agent harnesses? Join the [Discord](https://discord.com/invite/vkVn2xEQn) to trade notes, benchmark results, and new finds.
+Please read the [contribution guidelines](contributing.md) before opening a pull request. Building or studying security agent harnesses? Join the [Discord](https://discord.com/invite/73FvhSy8vb) to trade notes, benchmark results, and new finds.
 
 ## Contents
 
