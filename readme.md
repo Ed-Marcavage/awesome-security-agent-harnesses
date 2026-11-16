@@ -143,6 +143,7 @@ Security capabilities exposed to somebody else's agent: MCP servers, disassemble
 - [Burp Suite MCP](https://github.com/PortSwigger/mcp-server) - PortSwigger's own MCP server, connecting agents to Burp Suite's proxy, scanner, and repeater.
 - [Claude Code CyberSecurity Skills](https://github.com/Masriyan/Claude-Code-CyberSecurity-Skill) - Nineteen skills spanning offensive security, defensive operations, reverse engineering, threat hunting, and SOC automation. `SKILL.md`.
 - [codebadger](https://github.com/qcri/codebadger) - Containerized MCP server exposing Joern code-property graphs to agents for data-flow tracing, taint analysis, and program slicing across source-code repositories.
+- [No Stairs Please MCP](https://nostairsplease.com/mcp) - Public read-only remote MCP server for 1,700+ US and Canadian live-music venues.
 - [DAILA](https://github.com/mahaloz/DAILA) - Decompiler-agnostic plugin for using AI assistance inside your decompiler.
 - [Gepetto](https://github.com/JusticeRage/Gepetto) - IDA plugin that queries language models to explain and rename decompiled functions.
 - [HexStrike AI](https://github.com/0x4m4/hexstrike-ai) - MCP server that gives agents a large toolkit of offensive security tools for recon, scanning, and exploitation.
