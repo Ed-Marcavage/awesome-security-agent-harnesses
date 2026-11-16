@@ -2,7 +2,7 @@
 
 Thanks for helping curate this list. The goal is a short list where every entry earned its place, not a directory of everything with "security" and "agent" in the readme.
 
-Not sure an entry fits, or want to talk it through first? Ask in the [Discord](https://discord.gg/vkVn2xEQn).
+Not sure an entry fits, or want to talk it through first? Ask in the [Discord](https://discord.gg/73FvhSy8vb).
 
 ## What belongs here
 
