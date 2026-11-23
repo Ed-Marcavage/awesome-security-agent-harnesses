@@ -200,6 +200,7 @@ Security capabilities exposed to somebody else's agent: MCP servers, disassemble
 - [IDA Pro MCP](https://github.com/mrexodia/ida-pro-mcp) - MCP server exposing IDA Pro decompilation, cross-references, and type inference to coding agents.
 - [Lemmalog](https://github.com/JordyZomer/lemmalog) - Datalog engine for agent memory with provenance-tracked facts, incremental derivation, and an MCP server, the implementation behind the *Turning LLM Memory into Program Analysis* reading.
 - [LLM4Decompile](https://github.com/albertan017/LLM4Decompile) - Open models and pipeline for decompiling binary code into readable C.
+- [OmniForge Launch Audit](https://github.com/zColdWater/mcp-launch-audit) - Zero-dependency CLI and remote Streamable HTTP MCP server providing passive web security header, client-bundle secret leak, Supabase RLS, SPF/DKIM/DMARC email DNS, and 78-TLD RDAP checks for security and deployment agents.
 - [REA](https://github.com/morluto/rea) - Local CLI and MCP analysis tools with source-linked evidence for shipped binaries and JavaScript/Electron apps, plus a reverse-engineer-anything skill; deep native analysis requires separately installed Hopper, Ghidra, or IDA.
 - [ReVa](https://github.com/cyberkaida/reverse-engineering-assistant) - Ghidra extension providing an MCP server for agent-driven reverse engineering.
 - [usb-rea](https://github.com/emirmrkaljevic/usb-rea) - MCP server and CLI that infers USB gadget protocols from labelled captures and generates a pyusb driver.
