@@ -157,7 +157,7 @@ Agents that do security operations work against real telemetry: alert triage, in
 - [SecurityClaw](https://github.com/SecurityClaw/SecurityClaw) - Skill-based autonomous SOC agent that watches OpenSearch or Elasticsearch data, builds a RAG-based memory of normal behavior, and has a model validate anomalies as they arrive.
 - [SHERLOCK](https://github.com/ThalesGroup/sherlock-threathunting-tool) - Thales's threat-hunting agent that turns a hypothesis or campaign name into sourced IOCs, runs queries across Microsoft Sentinel, Microsoft Defender, and Google SecOps, and reports a timeline; no write or response tool exists in the codebase, so read-only is enforced by construction rather than by prompt.
 - [SocTalk](https://github.com/soctalk/soctalk) - Wazuh-native triage agent that routes each alert through a two-tier LLM pipeline, auto-closes cases when policy allows, and keeps a human on escalations and gated actions, for one team or a multi-tenant MSSP.
-- [Vigil](https://github.com/Vigil-SOC/vigil) - Apache-2.0 AI SOC that runs against your own local or remote model, from the DeepTempo team behind the SOCBench benchmark.
+- [Vigil](https://github.com/Vigil-SOC/vigil) - Apache-2.0 autonomous AI SOC from the DeepTempo team: specialist agents triage, investigate, hunt, and respond over MCP under Markdown playbooks, each run keeps an append-only ledger whose verdicts later runs recall, unattended action stays behind an autonomy ceiling only a person can raise, and it runs on your own local or hosted model.
 
 ## Purple Team and Red vs Blue Harnesses
 
