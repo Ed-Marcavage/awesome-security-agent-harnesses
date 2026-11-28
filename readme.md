@@ -198,6 +198,7 @@ Security capabilities exposed to somebody else's agent: MCP servers, disassemble
 - [Gepetto](https://github.com/JusticeRage/Gepetto) - IDA plugin that queries language models to explain and rename decompiled functions.
 - [HexStrike AI](https://github.com/0x4m4/hexstrike-ai) - MCP server that gives agents a large toolkit of offensive security tools for recon, scanning, and exploitation.
 - [IDA Pro MCP](https://github.com/mrexodia/ida-pro-mcp) - MCP server exposing IDA Pro decompilation, cross-references, and type inference to coding agents.
+- [iotaudit](https://github.com/emirmrkaljevic/iotaudit) - MCP server and CLI that audits smart home devices on a network you own, from a live capture or a saved pcap: who each device talks to and in which country, plaintext traffic, open ports, default credentials and UPnP forwards, with an A to F grade per device and a local HTML report.
 - [Lemmalog](https://github.com/JordyZomer/lemmalog) - Datalog engine for agent memory with provenance-tracked facts, incremental derivation, and an MCP server, the implementation behind the *Turning LLM Memory into Program Analysis* reading.
 - [LLM4Decompile](https://github.com/albertan017/LLM4Decompile) - Open models and pipeline for decompiling binary code into readable C.
 - [OmniForge Launch Audit](https://github.com/zColdWater/mcp-launch-audit) - Zero-dependency CLI and remote Streamable HTTP MCP server providing passive web security header, client-bundle secret leak, Supabase RLS, SPF/DKIM/DMARC email DNS, and 78-TLD RDAP checks for security and deployment agents.
